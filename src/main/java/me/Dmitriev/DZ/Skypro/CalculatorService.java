@@ -13,9 +13,8 @@ public class CalculatorService {
         return "Пока";
     }
 
-    public String summa(int nam1, int nam2) {
-
-        return String.valueOf( nam1 + nam2);
+    public int summa(int nam1, int nam2) {
+        return  nam1 + nam2;
     }
 
     public int multiplication(int nam1, int nam2) {
@@ -23,12 +22,12 @@ public class CalculatorService {
 
     }
 
-    public String subtraction(int nam1, int nam2) {
-        return String.valueOf( nam1 - nam2);
+    public int subtraction(int nam1, int nam2) {
+        return  nam1 - nam2;
     }
 
-    public String division(float nam1, float nam2) {
-            return String.valueOf( nam1 / nam2);
+    public float division(float nam1, float nam2) {
+            return nam1 / nam2;
         }
     }
 
