@@ -9,9 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/Calculator")
 public class CalculatorController {
-
     private final CalculatorService calculatorService;
-
 
     @Autowired
     public CalculatorController(CalculatorService calculatorService) {
@@ -19,14 +17,14 @@ public class CalculatorController {
     }
 
     @GetMapping("/Hello")
-    public String Hello() {
-        return calculatorService.Hello();
+    public String hello() {
+        return "Добро пожаловать в калькулятор";
     }
 
     @GetMapping("/Bay")
-    public String Bay() {
+    public String bay() {
 
-        return calculatorService.Bay();
+        return "Пока";
     }
 
 

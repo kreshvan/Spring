@@ -4,16 +4,15 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
 
-
 @Service
 @Component
 public class CalculatorService {
 
-    public String Hello() {
+    public String hello() {
         return "Добро пожаловать в калькулятор";
     }
 
-    public String Bay() {
+    public String bay() {
         return "Пока";
     }
 
